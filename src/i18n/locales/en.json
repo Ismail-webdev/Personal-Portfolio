@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Ismail Ali",
+    "role": "Frontend / WordPress Developer",
+    "tagline": "Designing fast, responsive, and user-friendly websites that bring ideas to life.",
+    "hireMe": "Hire Me",
+    "downloadCV": "Download CV"
+  },
+  "footer": {
+    "aboutText": "Frontend & WordPress Developer passionate about creating exceptional web experiences that make a difference.",
+    "linkHeading": "Quick Links",
+    "links": {
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contact": "Contact"
+    },
+    "contactHeading": "Get In Touch",
+    "contact": {
+      "emailLabel": "Email",
+      "location": "Location:",
+      "locationtext": "Available for Remote Work",
+      "status": "Status:",
+      "statustext": "Open to Opportunities"
+    },
+    "techHeading": "Tech Stack",
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Design",
+      "tools": "Tools"
+    }
+  }
+}
