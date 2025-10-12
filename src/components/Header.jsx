@@ -91,7 +91,7 @@ const Header = () => {
             opacity: isMobileMenuOpen ? 1 : 0,
           }}
           transition={{ duration: 0.3 }}
-          className="lg:hidden overflow-hidden bg-primary-900/45"
+          className="lg:hidden overflow-hidden bg-primary-900"
         >
           <div className="py-4 space-y-2">
             {navItems.map((item) => (
