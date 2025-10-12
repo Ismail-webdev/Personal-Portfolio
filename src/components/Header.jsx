@@ -92,7 +92,7 @@ const Header = () => {
           }}
           transition={{ duration: 0.3 }}
           className="lg:hidden overflow-hidden"
-          style={{ backgroundColor: "rgba(139, 92, 246, 0.1)" }}
+          style={{ backgroundColor: "rgba(139, 92, 246, 0.9)" }}
         >
           <div className="py-4 space-y-2">
             {navItems.map((item) => (
@@ -101,7 +101,7 @@ const Header = () => {
                 onClick={() => scrollToSection(item.href)}
                 className={` ${
                   i18n.language === "ar" ? "text-right " : "text-left "
-                }block w-full  px-4 py-2 text-primary-800 hover:bg-accent-200 rounded-lg transition-colors duration-300`}
+                }block w-full  px-4 py-2 text-white hover:bg-accent-200 rounded-lg transition-colors duration-300`}
               >
                 {item.name}
               </button>
