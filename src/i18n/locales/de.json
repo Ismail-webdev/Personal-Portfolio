@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "experience": "Erfahrung",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Ismail Ali",
+    "role": "Frontend- / WordPress-Entwickler",
+    "tagline": "Gestaltung schneller, responsiver und benutzerfreundlicher Websites, die Ideen zum Leben erwecken.",
+    "hireMe": "Jetzt einstellen",
+    "downloadCV": "Lebenslauf herunterladen"
+  },
+  "footer": {
+    "aboutText": "Frontend- & WordPress-Entwickler mit Leidenschaft für außergewöhnliche Web-Erlebnisse, die einen Unterschied machen.",
+    "linkHeading": "Schnellzugriff",
+    "links": {
+      "about": "Über mich",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte",
+      "experience": "Erfahrung",
+      "contact": "Kontakt"
+    },
+    "contactHeading": "Kontakt aufnehmen",
+    "contact": {
+      "emailLabel": "E-Mail",
+      "location": "Standort:",
+      "locationtext": "Verfügbar für Remote-Arbeit",
+      "status": "Status:",
+      "statustext": "Offen für neue Möglichkeiten"
+    },
+    "techHeading": "Technologien",
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Design",
+      "tools": "Tools"
+    }
+  }
+}

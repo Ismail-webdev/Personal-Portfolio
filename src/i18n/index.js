@@ -5,10 +5,22 @@ import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 
 import en from "./locales/en.json";
 import ar from "./locales/ar.json";
+import de from "./locales/de.json";
+import es from "./locales/es.json";
+import fr from "./locales/fr.json";
 
 const resources = {
   en: {
-    translation: en, // ✅ lowercase "translation"
+    translation: en,
+  },
+  de: {
+    translation: de,
+  },
+  fr: {
+    translation: fr,
+  },
+  es: {
+    translation: es,
   },
   ar: {
     translation: ar,

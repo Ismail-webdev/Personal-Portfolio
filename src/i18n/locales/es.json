@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Ismail Ali",
+    "role": "Desarrollador Frontend / WordPress",
+    "tagline": "Diseñando sitios web rápidos, receptivos y fáciles de usar que dan vida a las ideas.",
+    "hireMe": "Contrátame",
+    "downloadCV": "Descargar CV"
+  },
+  "footer": {
+    "aboutText": "Desarrollador Frontend y WordPress apasionado por crear experiencias web excepcionales que marcan la diferencia.",
+    "linkHeading": "Enlaces rápidos",
+    "links": {
+      "about": "Sobre mí",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "experience": "Experiencia",
+      "contact": "Contacto"
+    },
+    "contactHeading": "Ponte en contacto",
+    "contact": {
+      "emailLabel": "Correo electrónico",
+      "location": "Ubicación:",
+      "locationtext": "Disponible para trabajo remoto",
+      "status": "Estado:",
+      "statustext": "Abierto a oportunidades"
+    },
+    "techHeading": "Tecnologías",
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Diseño",
+      "tools": "Herramientas"
+    }
+  }
+}
