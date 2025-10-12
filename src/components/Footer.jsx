@@ -34,7 +34,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary-900 text-white">
-      <div className="container-custom">
+      <div className="container-custom lg:px-0 px-4">
         <div className="py-12">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Brand Section */}
