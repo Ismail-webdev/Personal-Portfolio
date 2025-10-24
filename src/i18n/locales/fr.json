@@ -15,6 +15,19 @@
     "hireMe": "Engagez-moi",
     "downloadCV": "Télécharger le CV"
   },
+  "about": {
+    "about_me": "À propos de moi",
+    "about_description": "Je suis un développeur Frontend et WordPress passionné, titulaire d'un master en technologie de l'information. Avec plus d'un an d'expérience professionnelle, je me spécialise dans la création de sites Web modernes et réactifs offrant des expériences utilisateur exceptionnelles.",
+    "about_journey": "Mon parcours dans le développement web a commencé avec une solide formation en informatique, et j'ai depuis perfectionné mes compétences en React.js, WordPress et technologies web modernes. Je suis passionné par la création de code propre, efficace et d'interfaces utilisateur esthétiques.",
+    "about_current": "Actuellement chez Appiesoft Web Solutions, je me concentre sur le développement de mes compétences et la recherche d'opportunités à l'international, notamment en Europe et aux Émirats arabes unis, où je peux contribuer à des projets innovants et évoluer en tant que développeur.",
+    "stats": {
+      "education": "Éducation",
+      "experience": "Expérience",
+      "goal": "Objectif",
+      "goalValue": "International",
+      "projects": "Projets"
+    }
+  },
   "footer": {
     "aboutText": "Développeur Frontend et WordPress passionné par la création d’expériences web exceptionnelles qui font la différence.",
     "linkHeading": "Liens rapides",

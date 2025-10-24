@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
 import Hero from "./sections/Hero";
 import Footer from "./components/Footer";
+import About from "./sections/About";
 
 const App = () => {
   const { t, i18n } = useTranslation();
@@ -18,6 +19,7 @@ const App = () => {
     <div className="min-h-screen bg-gradient-to-br from-primary-900 to-primary-800">
       <Header />
       <Hero />
+      <About />
       <Footer />
     </div>
   );

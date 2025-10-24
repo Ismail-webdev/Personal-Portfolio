@@ -15,6 +15,19 @@
     "hireMe": "Hire Me",
     "downloadCV": "Download CV"
   },
+  "about": {
+    "about_me": "About Me",
+    "about_description": "I'm a passionate Frontend and WordPress Developer with a Master's degree in Information Technology. With over a year of professional experience, I specialize in creating modern, responsive websites that deliver exceptional user experiences.",
+    "about_journey": "My journey in web development began with a strong foundation in computer science, and I've since honed my skills in React.js, WordPress, and modern web technologies. I'm passionate about creating clean, efficient code and beautiful user interfaces.",
+    "about_current": "Currently working at Appiesoft Web Solutions, I'm focused on expanding my expertise and seeking opportunities to work internationally, particularly in Europe and the UAE, where I can contribute to innovative projects and grow as a developer.",
+    "stats": {
+      "education": "Education",
+      "experience": "Experience",
+      "goal": "Goal",
+      "goalValue": "International",
+      "projects": "Projects"
+    }
+  },
   "footer": {
     "aboutText": "Frontend & WordPress Developer passionate about creating exceptional web experiences that make a difference.",
     "linkHeading": "Quick Links",

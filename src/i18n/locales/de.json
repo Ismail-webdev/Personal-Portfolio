@@ -15,6 +15,19 @@
     "hireMe": "Jetzt einstellen",
     "downloadCV": "Lebenslauf herunterladen"
   },
+  "about": {
+    "about_me": "Über mich",
+    "about_description": "Ich bin ein leidenschaftlicher Frontend- und WordPress-Entwickler mit einem Masterabschluss in Informationstechnologie. Mit über einem Jahr Berufserfahrung spezialisiere ich mich auf die Erstellung moderner, responsiver Websites, die außergewöhnliche Benutzererlebnisse bieten.",
+    "about_journey": "Meine Reise in der Webentwicklung begann mit einer soliden Grundlage in Informatik, und seitdem habe ich meine Fähigkeiten in React.js, WordPress und modernen Webtechnologien verfeinert. Ich habe eine Leidenschaft für sauberen, effizienten Code und schöne Benutzeroberflächen.",
+    "about_current": "Derzeit arbeite ich bei Appiesoft Web Solutions und konzentriere mich darauf, meine Fachkenntnisse zu erweitern und internationale Möglichkeiten zu suchen, insbesondere in Europa und den Vereinigten Arabischen Emiraten, wo ich zu innovativen Projekten beitragen und mich als Entwickler weiterentwickeln kann.",
+    "stats": {
+      "education": "Ausbildung",
+      "experience": "Erfahrung",
+      "goal": "Ziel",
+      "goalValue": "International",
+      "projects": "Projekte"
+    }
+  },
   "footer": {
     "aboutText": "Frontend- & WordPress-Entwickler mit Leidenschaft für außergewöhnliche Web-Erlebnisse, die einen Unterschied machen.",
     "linkHeading": "Schnellzugriff",
