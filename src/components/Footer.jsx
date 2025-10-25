@@ -107,7 +107,12 @@ const Footer = () => {
                   <span className="font-medium">
                     {t("footer.contact.emailLabel")}
                   </span>{" "}
-                  ismailali.webdev@gmail.com
+                  <a
+                    href="mailto:ismailali.webdev@gmail.com"
+                    rel="noopener noreferrer"
+                  >
+                    ismailali.webdev@gmail.com
+                  </a>
                 </p>
                 <p className="text-primary-300">
                   <span className="font-medium">
