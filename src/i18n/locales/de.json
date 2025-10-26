@@ -45,7 +45,7 @@
     },
     "contactHeading": "Kontakt aufnehmen",
     "contact": {
-      "emailLabel": "E-Mail",
+      "emailLabel": "E-Mail:",
       "location": "Standort:",
       "locationtext": "Verfügbar für Remote-Arbeit",
       "status": "Status:",
