@@ -56,6 +56,12 @@
       "frontend": "Frontend",
       "design": "Design",
       "tools": "Werkzeuge"
+    },
+    "copyright": {
+      "name": "Ismail Ali",
+      "rights": "Alle Rechte vorbehalten.",
+      "made": "Gemacht mit",
+      "tech": "mit React & TailwindCSS"
     }
   }
 }
