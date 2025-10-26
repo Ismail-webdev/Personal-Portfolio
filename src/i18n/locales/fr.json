@@ -26,6 +26,11 @@
       "goal": "Objectif",
       "goalValue": "International",
       "projects": "Projets"
+    },
+    "profileCard": {
+      "imageAlt": "Photo de profil d'Ismail Ali",
+      "role": "Développeur Frontend",
+      "skills": "React • WordPress • TailwindCSS"
     }
   },
   "footer": {
@@ -48,8 +53,7 @@
     },
     "techHeading": "Technologies",
     "techCategories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
+      "frontend": "Interface Frontend",
       "design": "Conception",
       "tools": "Outils"
     }

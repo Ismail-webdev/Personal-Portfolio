@@ -26,6 +26,11 @@
       "goal": "الهدف",
       "goalValue": "دولي",
       "projects": "المشاريع"
+    },
+    "profileCard": {
+      "imageAlt": "صورة الملف الشخصي لإسماعيل علي",
+      "role": "مطور الواجهة الأمامية",
+      "skills": "React • WordPress • TailwindCSS"
     }
   },
   "footer": {
@@ -49,7 +54,6 @@
     "techHeading": "المهارات التقنية",
     "techCategories": {
       "frontend": "الواجهة الأمامية",
-      "backend": "الواجهة الخلفية",
       "design": "التصميم",
       "tools": "الأدوات"
     }

@@ -36,25 +36,25 @@ const About = () => {
       icon: GraduationCap,
       label: t("about.stats.education"),
       value: "M.Sc. IT",
-      color: "text-blue-600 dark:text-blue-400",
+      color: "text-blue-400",
     },
     {
       icon: Code,
       label: t("about.stats.experience"),
       value: "1+ Year",
-      color: "text-green-600 dark:text-green-400",
+      color: "text-green-400",
     },
     {
       icon: Globe,
       label: t("about.stats.goal"),
       value: t("about.stats.goalValue"),
-      color: "text-purple-600 dark:text-purple-400",
+      color: "text-purple-400",
     },
     {
       icon: Award,
       label: t("about.stats.projects"),
       value: "10+",
-      color: "text-orange-600 dark:text-orange-400",
+      color: "text-orange-400",
     },
   ];
   return (
@@ -97,43 +97,53 @@ const About = () => {
                   <motion.div
                     key={stat.label}
                     whileHover={{ scale: 1.05 }}
-                    className="text-center p-4 bg-primary-50 dark:bg-primary-800 rounded-lg"
+                    className="text-center p-4 bg-primary-800 rounded-lg"
                   >
                     <stat.icon
                       className={`w-8 h-8 mx-auto mb-2 ${stat.color}`}
                     />
-                    <div className="text-2xl font-bold text-primary-900 dark:text-white">
+                    <div className="text-2xl font-bold text-white">
                       {stat.value}
                     </div>
-                    <div className="text-sm text-primary-600 dark:text-primary-400">
-                      {stat.label}
-                    </div>
+                    <div className="text-sm text-primary-400">{stat.label}</div>
                   </motion.div>
                 ))}
               </motion.div>
             </motion.div>
             <motion.div
-              variants={itemVariants}
-              className="lg:flex justify-center items-center"
+              className="flex justify-center items-center"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
               <div className="relative">
-                {/* Professional Card Design */}
-                <div className="w-80 h-96 bg-gradient-to-br from-accent-50 to-primary-50 dark:from-accent-900/20 dark:to-primary-900/20 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 p-8 relative overflow-hidden">
-                  {/* Decorative Elements */}
-                  <div className="absolute top-4 right-4 w-12 h-12 bg-accent-100 dark:bg-accent-800 rounded-full opacity-60"></div>
-                  <div className="absolute bottom-4 left-4 w-8 h-8 bg-primary-100 dark:bg-primary-800 rounded-full opacity-60"></div>
+                <div className="max-w-sm w-80 h-96 bg-gradient-to-br from-accent-900/20 to-primary-900/20 rounded-2xl shadow-2xl border border-slate-700 p-8 relative overflow-hidden">
+                  {/* Background circles */}
+                  <div className="absolute top-4 right-4 w-12 h-12 bg-accent-800 rounded-full opacity-60"></div>
+                  <div className="absolute bottom-4 left-4 w-8 h-8 bg-primary-800 rounded-full opacity-60"></div>
 
                   {/* Content */}
                   <div className="relative z-10 h-full flex flex-col justify-center items-center text-center">
-                    <div className="w-20 h-20 bg-gradient-to-br from-accent-500 to-primary-500 rounded-full mb-6 flex items-center justify-center">
-                      <span className="text-2xl font-bold text-white">IA</span>
+                    {/* Image */}
+                    <div className="w-30 h-30 bg-gradient-to-br from-accent-500 to-primary-500 rounded-full mb-6 flex items-center justify-center overflow-hidden">
+                      <img
+                        src="/profilepic.jpg"
+                        alt={t("about.profileCard.imageAlt")}
+                        className="w-full h-full object-cover rounded-full"
+                      />
                     </div>
-                    <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-2">
-                      Frontend Developer
+
+                    <h2 className="text-2xl font-semibold  text-accent-600 mb-1">
+                      Ismail Ali
+                    </h2>
+                    <h3 className="text-xl font-semibold text-slate-200 mb-2">
+                      {t("about.profileCard.role")}
                     </h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
-                      React • WordPress • TailwindCSS
+                    <p className="text-sm text-slate-400 mb-4">
+                      {t("about.profileCard.skills")}
                     </p>
+
+                    {/* Dots */}
                     <div className="flex gap-2">
                       <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                       <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>

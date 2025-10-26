@@ -1,7 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Heart, Github, Linkedin, Mail } from "lucide-react";
+import {
+  Heart,
+  Github,
+  Linkedin,
+  Mail,
+  Globe,
+  Palette,
+  Code,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { div } from "framer-motion/client";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -25,6 +34,23 @@ const Footer = () => {
     { name: t("footer.links.contact"), href: "#contact" },
   ];
 
+  const techCategories = [
+    {
+      icon: Code,
+      title: t("footer.techCategories.frontend"),
+      technologies: ["React.js", "JavaScript", "HTML5", "CSS3", "TailwindCSS"],
+    },
+    {
+      icon: Palette,
+      title: t("footer.techCategories.design"),
+      technologies: ["Figma", "Elementor", "WordPress", "Adobe XD"],
+    },
+    {
+      icon: Globe,
+      title: t("footer.techCategories.tools"),
+      technologies: ["Git", "Chrome DevTools", "Vite", "VS Code"],
+    },
+  ];
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
     if (element) {
@@ -36,7 +62,7 @@ const Footer = () => {
     <footer className="bg-primary-900 text-white">
       <div className="container-custom lg:px-0 px-4">
         <div className="py-12">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -110,6 +136,7 @@ const Footer = () => {
                   <a
                     href="mailto:ismailali.webdev@gmail.com"
                     rel="noopener noreferrer"
+                    target="_blank"
                   >
                     ismailali.webdev@gmail.com
                   </a>
@@ -128,8 +155,65 @@ const Footer = () => {
                 </p>
               </div>
             </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="space-y-4"
+            >
+              <h4 className="text-lg font-semibold text-accent-400">
+                {t("footer.techHeading")}
+              </h4>
+              <div className="space-y-3">
+                {techCategories.map((category, index) => (
+                  <div key={category.title} className="space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <category.icon size={16} className="text-accent-400" />
+                      <span className="text-sm font-medium text-primary-200">
+                        {category.title}
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-1 ml-6">
+                      {category.technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-2 py-1 bg-primary-800 text-primary-300 text-xs rounded-md hover:bg-accent-600 hover:text-white transition-colors duration-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="border-t border-primary-800 py-6"
+        >
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-primary-400 text-sm font-medium">
+              © {currentYear} {t("footer.copyright.name")}.{" "}
+              {t("footer.copyright.rights")}
+            </p>
+
+            <div className="flex items-center space-x-2 text-primary-400 text-sm font-medium">
+              <span>{t("footer.copyright.made")}</span>
+              <motion.div
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 1, repeat: Infinity }}
+              >
+                <Heart size={16} className="text-red-500" fill="currentColor" />
+              </motion.div>
+              <span>{t("footer.copyright.tech")}</span>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </footer>
   );

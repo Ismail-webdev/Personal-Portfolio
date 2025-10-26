@@ -26,6 +26,11 @@
       "goal": "Goal",
       "goalValue": "International",
       "projects": "Projects"
+    },
+    "profileCard": {
+      "imageAlt": "Profile picture of Ismail Ali",
+      "role": "Frontend Developer",
+      "skills": "React • WordPress • TailwindCSS"
     }
   },
   "footer": {
@@ -49,9 +54,14 @@
     "techHeading": "Tech Stack",
     "techCategories": {
       "frontend": "Frontend",
-      "backend": "Backend",
       "design": "Design",
       "tools": "Tools"
+    },
+    "copyright": {
+      "name": "Ismail Ali",
+      "rights": "All rights reserved.",
+      "made": "Made with",
+      "tech": "using React & TailwindCSS"
     }
   }
 }
