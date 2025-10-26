@@ -129,7 +129,7 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.2, rotate: -5 }}
                 whileTap={{ scale: 0.9 }}
-                href="https://linkedin.com/in/ismailali"
+                href="https://linkedin.com/in/ismailali082"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-primary-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-primary-300 hover:text-accent-400"
