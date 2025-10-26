@@ -111,13 +111,13 @@ const About = () => {
               </motion.div>
             </motion.div>
             <motion.div
-              className="flex justify-center items-center"
+              className="flex justify-center items-center  mt-12"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
               <div className="relative">
-                <div className="max-w-sm w-80 h-96 bg-gradient-to-br from-accent-900/20 to-primary-900/20 rounded-2xl shadow-2xl border border-slate-700 p-8 relative overflow-hidden lg:mt-0 mt-12">
+                <div className="max-w-sm w-80 h-96 bg-gradient-to-br from-accent-900/20 to-primary-900/20 rounded-2xl shadow-2xl border border-slate-700 p-8 relative overflow-hidden lg:mt-0">
                   {/* Background circles */}
                   <div className="absolute top-4 right-4 w-12 h-12 bg-accent-800 rounded-full opacity-60"></div>
                   <div className="absolute bottom-4 left-4 w-8 h-8 bg-primary-800 rounded-full opacity-60"></div>
