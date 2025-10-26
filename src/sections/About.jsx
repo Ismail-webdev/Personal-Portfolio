@@ -111,7 +111,7 @@ const About = () => {
               </motion.div>
             </motion.div>
             <motion.div
-              className="flex justify-center items-center"
+              className="flex justify-center items-center mt-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
