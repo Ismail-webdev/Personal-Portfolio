@@ -53,7 +53,7 @@ const About = () => {
     {
       icon: Award,
       label: t("about.stats.projects"),
-      value: "10+",
+      value: "10+ live projects",
       color: "text-orange-400",
     },
   ];
