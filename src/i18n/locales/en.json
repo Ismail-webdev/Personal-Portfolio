@@ -33,6 +33,13 @@
       "skills": "React • WordPress • TailwindCSS"
     }
   },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Technologies and tools I use to build beautiful, performant web experiences.",
+    "alwaysLearningTitle": "Always Learning",
+    "alwaysLearningText": "I'm constantly exploring new technologies and frameworks to stay current with the latest trends in web development. Currently diving deeper into Next.js, TypeScript, and advanced React patterns to enhance my development capabilities.",
+    "proficiency": "Proficiency"
+  },
   "footer": {
     "aboutText": "Frontend & WordPress Developer passionate about creating exceptional web experiences that make a difference.",
     "linkHeading": "Quick Links",

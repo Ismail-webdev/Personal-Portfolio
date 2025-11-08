@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Hero from "./sections/Hero";
 import Footer from "./components/Footer";
 import About from "./sections/About";
+import Skills from "./sections/Skills";
 
 const App = () => {
   const { t, i18n } = useTranslation();
@@ -20,6 +21,7 @@ const App = () => {
       <Header />
       <Hero />
       <About />
+      <Skills />
       <Footer />
     </div>
   );

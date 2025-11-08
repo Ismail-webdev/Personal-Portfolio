@@ -39,13 +39,13 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       {/* background elements */}
-      <div className="absolute inset-0 from-accent-900/20 to-primary-900/20">
-        {/* floating element */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-accent-800 rounded-full opacity-20 animate-bounce-slow"></div>
-        <div
-          className="absolute bottom-20 right-10 w-32 h-32 bg-primary-700 rounded-full opacity-20 animate-bounce-slow"
-          style={{ animationDelay: "1s" }}
-        />
+      {/* floating element */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-accent-800 rounded-full opacity-20 animate-bounce-slow"></div>
+      <div
+        className="absolute bottom-20 right-10 w-32 h-32 bg-primary-700 rounded-full opacity-20 animate-bounce-slow"
+        style={{ animationDelay: "1s" }}
+      />
+      <div className="relative inset-0 from-accent-900/20 to-primary-900/20">
         <div
           className="absolute top-1/2 left-1/4 w-16 h-16 bg-accent-700 rounded-full opacity-30 animate-bounce-slow"
           style={{ animationDelay: "2s" }}
@@ -69,7 +69,7 @@ const Hero = () => {
               values={itemVariants}
               className="text-5xl md:text-7xl font-bold text-white mb-6"
             >
-              {t("hero.name")}
+              Ismail Ali
             </motion.h1>
 
             {/* Role */}
