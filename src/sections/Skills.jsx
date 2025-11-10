@@ -74,12 +74,14 @@ const Skills = () => {
     {
       name: "Next.js",
       icon: <SiNextdotjs />,
-      color: "from-slate-700 to-slate-900",
+      color: "from-amber-500 to-orange-500",
+      learning: true,
     },
     {
       name: "TypeScript",
       icon: <SiTypescript />,
-      color: "from-blue-600 to-blue-800",
+      color: "from-emerald-500 to-teal-500",
+      learning: true,
     },
   ];
 
@@ -155,7 +157,19 @@ const Skills = () => {
                 whileTap={{ scale: 0.95 }}
                 className="group relative"
               >
-                <div className="h-full bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300 flex items-center justify-center">
+                <div className="h-full bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300 flex items-center justify-center relative">
+                  {/* Learning Badge */}
+                  {skill.learning && (
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: index * 0.05 + 0.3 }}
+                      className="absolute -top-2 -right-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg z-10"
+                    >
+                      Learning
+                    </motion.div>
+                  )}
+                  
                   <motion.div
                     initial={{ scale: 0, rotate: -180 }}
                     animate={
@@ -201,31 +215,6 @@ const Skills = () => {
                 </motion.div>
               </motion.div>
             ))}
-          </motion.div>
-
-          {/* Optional Stats Section */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-16 flex flex-wrap justify-center gap-4"
-          >
-            <div className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl shadow-lg">
-              <div className="flex items-center gap-2">
-                <TrendingUp className="w-5 h-5" />
-                <span className="font-bold">5+ Years Experience</span>
-              </div>
-            </div>
-            <div className="px-6 py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-xl shadow-lg">
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-5 h-5" />
-                <span className="font-bold">50+ Projects</span>
-              </div>
-            </div>
-            <div className="px-6 py-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white rounded-xl shadow-lg">
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-5 h-5" />
-                <span className="font-bold">Continuous Learning</span>
-              </div>
-            </div>
           </motion.div>
         </motion.div>
       </div>
