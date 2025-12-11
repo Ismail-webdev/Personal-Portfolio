@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary colors */
+  --color-primary-50: #f8fafc;
+  --color-primary-100: #f1f5f9;
+  --color-primary-200: #e2e8f0;
+  --color-primary-300: #cbd5e1;
+  --color-primary-400: #94a3b8;
+  --color-primary-500: #64748b;
+  --color-primary-600: #475569;
+  --color-primary-700: #334155;
+  --color-primary-800: #1e293b;
+  --color-primary-900: #0f172a;
+
+  /* Accent colors */
+  --color-accent-50: #fdf4ff;
+  --color-accent-100: #fae8ff;
+  --color-accent-200: #f5d0fe;
+  --color-accent-300: #f0abfc;
+  --color-accent-400: #e879f9;
+  --color-accent-500: #d946ef;
+  --color-accent-600: #c026d3;
+  --color-accent-700: #a21caf;
+  --color-accent-800: #86198f;
+  --color-accent-900: #701a75;
+}
+
+/* ---------- Base Styles ---------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-primary-900 text-white antialiased;
+  }
+
+  [dir="rtl"] {
+    direction: rtl;
+  }
+  [dir="rtl"] .rtl-dropdown {
+    right: -50px !important;
+    width: fit-content !important;
+  }
+}
+
+/* ---------- Components ---------- */
+@layer components {
+  .btn-primary {
+    @apply bg-accent-600 hover:bg-accent-700 text-white 
+      px-6 py-3 rounded-lg font-medium 
+      transition-transform duration-300 
+      hover:scale-105 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-accent-600 text-accent-600 
+      hover:bg-accent-600 hover:text-white 
+      px-6 py-3 rounded-lg font-medium 
+      transition-transform duration-300 
+      hover:scale-105;
+  }
+
+  .card {
+    @apply bg-primary-800 rounded-xl shadow-lg 
+      transition-transform duration-300 
+      hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* ---------- Animations ---------- */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}

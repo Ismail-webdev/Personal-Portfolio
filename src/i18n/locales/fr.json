@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Ismail Ali",
+    "role": "Développeur Frontend / WordPress",
+    "tagline": "Je conçois des sites rapides, réactifs et conviviaux qui donnent vie aux idées.",
+    "hireMe": "Engagez-moi",
+    "downloadCV": "Télécharger le CV"
+  },
+  "about": {
+    "about_me": "À propos de moi",
+    "about_description": "Je suis un développeur Frontend et WordPress passionné, titulaire d'un master en technologie de l'information. Avec plus d'un an d'expérience professionnelle, je me spécialise dans la création de sites Web modernes et réactifs offrant des expériences utilisateur exceptionnelles.",
+    "about_journey": "Mon parcours dans le développement web a commencé avec une solide formation en informatique, et j'ai depuis perfectionné mes compétences en React.js, WordPress et technologies web modernes. Je suis passionné par la création de code propre, efficace et d'interfaces utilisateur esthétiques.",
+    "about_current": "Actuellement chez Appiesoft Web Solutions, je me concentre sur le développement de mes compétences et la recherche d'opportunités à l'international, notamment en Europe et aux Émirats arabes unis, où je peux contribuer à des projets innovants et évoluer en tant que développeur.",
+    "stats": {
+      "education": "Éducation",
+      "experience": "Expérience",
+      "goal": "Objectif",
+      "goalValue": "International",
+      "projects": "Projets en ligne"
+    },
+    "profileCard": {
+      "imageAlt": "Photo de profil d'Ismail Ali",
+      "role": "Développeur Frontend"
+    }
+  },
+  "skills": {
+    "title": "Compétences et Technologies",
+    "proficiency": "Compétence",
+    "subtitle": "Technologies et outils que j'utilise pour créer des expériences web performantes et attrayantes.",
+    "alwaysLearningTitle": "Toujours en apprentissage",
+    "alwaysLearningText": "J'explore constamment de nouvelles technologies et frameworks pour rester à jour avec les dernières tendances du développement web. Actuellement, j'approfondis Next.js, TypeScript et les patterns avancés de React."
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "subtitle": "Une collection de projets sur lesquels j'ai travaillé, mettant en valeur mes compétences et mon expérience.",
+    "viewCode": "Code",
+    "viewDemo": "Démo",
+    "items": {
+      "project1": {
+        "title": "Site Web de Portfolio Moderne",
+        "description": "Un site web de portfolio responsive construit avec React.js et TailwindCSS, avec des animations fluides et un design moderne."
+      },
+      "project2": {
+        "title": "Site WordPress E-commerce",
+        "description": "Un site web e-commerce entièrement fonctionnel utilisant WordPress et WooCommerce avec des designs Elementor personnalisés."
+      },
+      "project3": {
+        "title": "Application Web React",
+        "description": "Une application web dynamique construite avec React.js, avec des composants UI modernes et un design responsive."
+      }
+    }
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Mon parcours professionnel et les rôles que j'ai occupés.",
+    "keyResponsibilities": "Responsabilités Clés",
+    "items": {
+      "exp1": {
+        "title": "Développeur Frontend",
+        "location": "Distant",
+        "period": "2023 - Présent",
+        "description": "Développement et maintenance d'applications web modernes utilisant React.js, WordPress et d'autres technologies frontend.",
+        "responsibility1": "Développer des interfaces utilisateur responsives et interactives avec React.js",
+        "responsibility2": "Construire et personnaliser des sites WordPress avec Elementor et WooCommerce",
+        "responsibility3": "Collaborer avec les membres de l'équipe pour fournir des solutions web de haute qualité"
+      }
+    }
+  },
+  "contact": {
+    "title": "Entrer en Contact",
+    "subtitle": "Vous avez un projet en tête ? Travaillons ensemble pour donner vie à vos idées.",
+    "info": {
+      "title": "Informations de Contact",
+      "description": "N'hésitez pas à me contacter si vous avez des questions ou souhaitez discuter d'un projet. Je suis toujours ouvert aux nouvelles opportunités et collaborations.",
+      "emailLabel": "E-mail",
+      "locationLabel": "Emplacement",
+      "locationValue": "Disponible pour le travail à distance"
+    },
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "E-mail",
+      "emailPlaceholder": "votre.email@exemple.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Demande de projet",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-moi de votre projet...",
+      "submit": "Envoyer le Message",
+      "success": "Merci ! Votre message a été envoyé avec succès.",
+      "error": "Veuillez remplir tous les champs requis.",
+      "defaultSubject": "Contact depuis le Site Web de Portfolio"
+    }
+  },
+  "footer": {
+    "aboutText": "Développeur Frontend et WordPress passionné par la création d’expériences web exceptionnelles qui font la différence.",
+    "linkHeading": "Liens rapides",
+    "links": {
+      "about": "À propos",
+      "skills": "Compétences",
+      "projects": "Projets",
+      "experience": "Expérience",
+      "contact": "Contact"
+    },
+    "contactHeading": "Entrer en contact",
+    "contact": {
+      "emailLabel": "E-mail:",
+      "location": "Emplacement :",
+      "locationtext": "Disponible pour le travail à distance",
+      "status": "Statut :",
+      "statustext": "Ouvert aux opportunités"
+    },
+    "techHeading": "Technologies",
+    "techCategories": {
+      "frontend": "Interface Frontend",
+      "design": "Conception",
+      "tools": "Outils"
+    },
+    "copyright": {
+      "name": "Ismail Ali",
+      "rights": "Tous droits réservés.",
+      "made": "Fait avec",
+      "tech": "en utilisant React et TailwindCSS"
+    }
+  }
+}

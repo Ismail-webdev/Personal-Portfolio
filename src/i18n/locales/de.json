@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "experience": "Erfahrung",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Ismail Ali",
+    "role": "Frontend- / WordPress-Entwickler",
+    "tagline": "Gestaltung schneller, responsiver und benutzerfreundlicher Websites, die Ideen zum Leben erwecken.",
+    "hireMe": "Jetzt einstellen",
+    "downloadCV": "Lebenslauf herunterladen"
+  },
+  "about": {
+    "about_me": "Über mich",
+    "about_description": "Ich bin ein leidenschaftlicher Frontend- und WordPress-Entwickler mit einem Masterabschluss in Informationstechnologie. Mit über einem Jahr Berufserfahrung spezialisiere ich mich auf die Erstellung moderner, responsiver Websites, die außergewöhnliche Benutzererlebnisse bieten.",
+    "about_journey": "Meine Reise in der Webentwicklung begann mit einer soliden Grundlage in Informatik, und seitdem habe ich meine Fähigkeiten in React.js, WordPress und modernen Webtechnologien verfeinert. Ich habe eine Leidenschaft für sauberen, effizienten Code und schöne Benutzeroberflächen.",
+    "about_current": "Derzeit arbeite ich bei Appiesoft Web Solutions und konzentriere mich darauf, meine Fachkenntnisse zu erweitern und internationale Möglichkeiten zu suchen, insbesondere in Europa und den Vereinigten Arabischen Emiraten, wo ich zu innovativen Projekten beitragen und mich als Entwickler weiterentwickeln kann.",
+    "stats": {
+      "education": "Ausbildung",
+      "experience": "Erfahrung",
+      "goal": "Ziel",
+      "goalValue": "International",
+      "projects": "Live-Projekte"
+    },
+    "profileCard": {
+      "imageAlt": "Profilbild von Ismail Ali",
+      "role": "Frontend-Entwickler"
+    }
+  },
+  "skills": {
+    "title": "Fähigkeiten & Technologien",
+    "subtitle": "Technologien und Werkzeuge, mit denen ich schöne, leistungsfähige Web-Erlebnisse erstelle.",
+    "proficiency": "Kompetenz",
+    "alwaysLearningTitle": "Stets lernbereit",
+    "alwaysLearningText": "Ich erkunde ständig neue Technologien und Frameworks, um auf dem neuesten Stand der Webentwicklung zu bleiben. Derzeit vertiefe ich meine Kenntnisse in Next.js, TypeScript und fortgeschrittenen React-Patterns."
+  },
+  "projects": {
+    "title": "Meine Projekte",
+    "subtitle": "Eine Sammlung von Projekten, an denen ich gearbeitet habe und die meine Fähigkeiten und Erfahrung zeigen.",
+    "viewCode": "Code",
+    "viewDemo": "Demo",
+    "items": {
+      "project1": {
+        "title": "Moderne Portfolio-Website",
+        "description": "Eine responsive Portfolio-Website, die mit React.js und TailwindCSS erstellt wurde und flüssige Animationen und modernes Design bietet."
+      },
+      "project2": {
+        "title": "E-Commerce WordPress-Website",
+        "description": "Eine voll funktionsfähige E-Commerce-Website mit WordPress und WooCommerce mit benutzerdefinierten Elementor-Designs."
+      },
+      "project3": {
+        "title": "React Web-Anwendung",
+        "description": "Eine dynamische Web-Anwendung, die mit React.js erstellt wurde und moderne UI-Komponenten und responsives Design bietet."
+      }
+    }
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "subtitle": "Meine berufliche Reise und die Rollen, die ich innehatte.",
+    "keyResponsibilities": "Hauptverantwortlichkeiten",
+    "items": {
+      "exp1": {
+        "title": "Frontend-Entwickler",
+        "location": "Remote",
+        "period": "2023 - Heute",
+        "description": "Entwicklung und Wartung moderner Web-Anwendungen mit React.js, WordPress und anderen Frontend-Technologien.",
+        "responsibility1": "Entwicklung responsiver und interaktiver Benutzeroberflächen mit React.js",
+        "responsibility2": "Erstellung und Anpassung von WordPress-Websites mit Elementor und WooCommerce",
+        "responsibility3": "Zusammenarbeit mit Teammitgliedern zur Bereitstellung hochwertiger Web-Lösungen"
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Haben Sie ein Projekt im Kopf? Lassen Sie uns zusammenarbeiten, um Ihre Ideen zum Leben zu erwecken.",
+    "info": {
+      "title": "Kontaktinformationen",
+      "description": "Kontaktieren Sie mich gerne, wenn Sie Fragen haben oder ein Projekt besprechen möchten. Ich bin immer offen für neue Möglichkeiten und Kooperationen.",
+      "emailLabel": "E-Mail",
+      "locationLabel": "Standort",
+      "locationValue": "Verfügbar für Remote-Arbeit"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre.email@beispiel.com",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Projektanfrage",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt...",
+      "submit": "Nachricht senden",
+      "success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.",
+      "error": "Bitte füllen Sie alle erforderlichen Felder aus.",
+      "defaultSubject": "Kontakt von Portfolio-Website"
+    }
+  },
+  "footer": {
+    "aboutText": "Frontend- & WordPress-Entwickler mit Leidenschaft für außergewöhnliche Web-Erlebnisse, die einen Unterschied machen.",
+    "linkHeading": "Schnellzugriff",
+    "links": {
+      "about": "Über mich",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte",
+      "experience": "Erfahrung",
+      "contact": "Kontakt"
+    },
+    "contactHeading": "Kontakt aufnehmen",
+    "contact": {
+      "emailLabel": "E-Mail:",
+      "location": "Standort:",
+      "locationtext": "Verfügbar für Remote-Arbeit",
+      "status": "Status:",
+      "statustext": "Offen für neue Möglichkeiten"
+    },
+    "techHeading": "Technologien",
+    "techCategories": {
+      "frontend": "Frontend",
+      "design": "Design",
+      "tools": "Werkzeuge"
+    },
+    "copyright": {
+      "name": "Ismail Ali",
+      "rights": "Alle Rechte vorbehalten.",
+      "made": "Gemacht mit",
+      "tech": "mit React & TailwindCSS"
+    }
+  }
+}
