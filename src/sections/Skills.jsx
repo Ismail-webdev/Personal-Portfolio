@@ -111,10 +111,10 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="section-padding bg-primary-900 relative overflow-hidden"
+      className="section-padding bg-white dark:bg-slate-900 relative overflow-hidden"
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-5 dark:opacity-10">
         <div
           className="absolute inset-0"
           style={{
@@ -133,10 +133,10 @@ const Skills = () => {
           className="max-w-7xl mx-auto"
         >
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6">
               {t("skills.title")}
             </h2>
-            <p className="text-lg md:text-xl text-primary-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
               {t("skills.subtitle")}
             </p>
           </motion.div>
@@ -149,15 +149,15 @@ const Skills = () => {
               <motion.div
                 key={skill.name}
                 variants={itemVariants}
-                whileHover={{ 
-                  y: -12, 
+                whileHover={{
+                  y: -12,
                   scale: 1.08,
-                  rotate: [0, -5, 5, 0]
+                  rotate: [0, -5, 5, 0],
                 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative"
               >
-                <div className="h-full bg-primary-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl border border-primary-700 transition-all duration-300 flex items-center justify-center relative">
+                <div className="h-full bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300 flex items-center justify-center relative">
                   {/* Learning Badge */}
                   {skill.learning && (
                     <motion.div
@@ -169,12 +169,12 @@ const Skills = () => {
                       Learning
                     </motion.div>
                   )}
-                  
+
                   <motion.div
                     initial={{ scale: 0, rotate: -180 }}
                     animate={
-                      isInView 
-                        ? { scale: 1, rotate: 0 } 
+                      isInView
+                        ? { scale: 1, rotate: 0 }
                         : { scale: 0, rotate: -180 }
                     }
                     transition={{
@@ -198,7 +198,7 @@ const Skills = () => {
                       }}
                       className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
                     />
-                    
+
                     {/* Icon */}
                     <span className="relative z-10">{skill.icon}</span>
                   </motion.div>
@@ -208,10 +208,10 @@ const Skills = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   whileHover={{ opacity: 1, y: 0 }}
-                  className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-primary-800 text-white text-sm font-medium px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-20"
+                  className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-slate-900 dark:bg-slate-700 text-white text-sm font-medium px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-20"
                 >
                   {skill.name}
-                  <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-primary-800 rotate-45"></div>
+                  <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-slate-900 dark:bg-slate-700 rotate-45"></div>
                 </motion.div>
               </motion.div>
             ))}

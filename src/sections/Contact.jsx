@@ -1,71 +1,65 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Mail, MapPin, Send, CheckCircle, AlertCircle } from "lucide-react";
+
+// NEW imports
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { contactSchema } from "../validation/contactSchema";
 
 const Contact = () => {
   const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
+  // keeps your existing success / error message UI
   const [formStatus, setFormStatus] = useState({
-    type: null, // 'success' or 'error'
+    type: null,
     message: "",
   });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // NEW — React Hook Form
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm({
+    resolver: yupResolver(contactSchema),
+  });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // Simple validation
-    if (!formData.name || !formData.email || !formData.message) {
+  // NEW — Submit to serverless function
+  const onSubmit = async (data) => {
+    setFormStatus({ type: null, message: "" });
+
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setFormStatus({
+          type: "success",
+          message: t("contact.form.success"),
+        });
+        reset();
+      } else {
+        setFormStatus({
+          type: "error",
+          message: t("contact.form.error"),
+        });
+      }
+    } catch (err) {
       setFormStatus({
         type: "error",
         message: t("contact.form.error"),
       });
-      return;
     }
 
-    // In a real application, you would send this to a backend
-    // For now, we'll use mailto as a fallback
-    // Note: Field labels in mailto body are kept in English (technical standard)
-    const mailtoLink = `mailto:ismailali.webdev@gmail.com?subject=${encodeURIComponent(
-      formData.subject || t("contact.form.defaultSubject")
-    )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
-
-    window.location.href = mailtoLink;
-
-    setFormStatus({
-      type: "success",
-      message: t("contact.form.success"),
-    });
-
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-
-    // Clear status message after 5 seconds
     setTimeout(() => {
       setFormStatus({ type: null, message: "" });
     }, 5000);
@@ -75,10 +69,7 @@ const Contact = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.1,
-      },
+      transition: { staggerChildren: 0.2, delayChildren: 0.1 },
     },
   };
 
@@ -87,10 +78,7 @@ const Contact = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
+      transition: { duration: 0.6, ease: "easeOut" },
     },
   };
 
@@ -129,7 +117,7 @@ const Contact = () => {
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
+            {/* Contact Info */}
             <motion.div variants={itemVariants} className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-white mb-6">
@@ -172,82 +160,75 @@ const Contact = () => {
 
             {/* Contact Form */}
             <motion.div variants={itemVariants}>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                {/* Name */}
                 <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-white font-medium mb-2"
-                  >
+                  <label className="block text-white font-medium mb-2">
                     {t("contact.form.name")}
                   </label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
+                    {...register("name")}
                     className="w-full px-4 py-3 bg-primary-900 border border-primary-700 rounded-lg text-white placeholder-primary-400 focus:outline-none focus:border-accent-600 transition-colors duration-300"
                     placeholder={t("contact.form.namePlaceholder")}
-                    required
                   />
+                  {errors.name && (
+                    <p className="text-red-400 text-sm mt-1">
+                      {errors.name.message}
+                    </p>
+                  )}
                 </div>
 
+                {/* Email */}
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-white font-medium mb-2"
-                  >
+                  <label className="block text-white font-medium mb-2">
                     {t("contact.form.email")}
                   </label>
                   <input
                     type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
+                    {...register("email")}
                     className="w-full px-4 py-3 bg-primary-900 border border-primary-700 rounded-lg text-white placeholder-primary-400 focus:outline-none focus:border-accent-600 transition-colors duration-300"
                     placeholder={t("contact.form.emailPlaceholder")}
-                    required
                   />
+                  {errors.email && (
+                    <p className="text-red-400 text-sm mt-1">
+                      {errors.email.message}
+                    </p>
+                  )}
                 </div>
 
+                {/* Subject */}
                 <div>
-                  <label
-                    htmlFor="subject"
-                    className="block text-white font-medium mb-2"
-                  >
+                  <label className="block text-white font-medium mb-2">
                     {t("contact.form.subject")}
                   </label>
                   <input
                     type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
+                    {...register("subject")}
                     className="w-full px-4 py-3 bg-primary-900 border border-primary-700 rounded-lg text-white placeholder-primary-400 focus:outline-none focus:border-accent-600 transition-colors duration-300"
                     placeholder={t("contact.form.subjectPlaceholder")}
                   />
                 </div>
 
+                {/* Message */}
                 <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-white font-medium mb-2"
-                  >
+                  <label className="block text-white font-medium mb-2">
                     {t("contact.form.message")}
                   </label>
                   <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     rows={6}
+                    {...register("message")}
                     className="w-full px-4 py-3 bg-primary-900 border border-primary-700 rounded-lg text-white placeholder-primary-400 focus:outline-none focus:border-accent-600 transition-colors duration-300 resize-none"
                     placeholder={t("contact.form.messagePlaceholder")}
-                    required
                   />
+                  {errors.message && (
+                    <p className="text-red-400 text-sm mt-1">
+                      {errors.message.message}
+                    </p>
+                  )}
                 </div>
 
+                {/* Success / Error Box */}
                 {formStatus.message && (
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
@@ -267,14 +248,18 @@ const Contact = () => {
                   </motion.div>
                 )}
 
+                {/* Submit Button */}
                 <motion.button
                   type="submit"
+                  disabled={isSubmitting}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full btn-primary flex items-center justify-center gap-2 text-lg"
                 >
                   <Send size={20} />
-                  {t("contact.form.submit")}
+                  {isSubmitting
+                    ? t("contact.form.sending")
+                    : t("contact.form.submit")}
                 </motion.button>
               </form>
             </motion.div>
@@ -286,4 +271,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

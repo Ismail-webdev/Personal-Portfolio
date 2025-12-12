@@ -10,7 +10,7 @@ import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
 
 const App = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   useEffect(() => {
     document.documentElement.setAttribute(
       "dir",

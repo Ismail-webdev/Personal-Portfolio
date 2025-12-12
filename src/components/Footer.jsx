@@ -10,6 +10,10 @@ import {
   Code,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+<<<<<<< HEAD
+=======
+import { div } from "framer-motion/client";
+>>>>>>> ad6ee24881f8f943b70dfe75c077e8195223e69b
 
 const Footer = () => {
   const { t } = useTranslation();

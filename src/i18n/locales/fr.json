@@ -29,7 +29,12 @@
     },
     "profileCard": {
       "imageAlt": "Photo de profil d'Ismail Ali",
+<<<<<<< HEAD
       "role": "Développeur Frontend"
+=======
+      "role": "Développeur Frontend",
+      "skills": "React • WordPress • TailwindCSS"
+>>>>>>> ad6ee24881f8f943b70dfe75c077e8195223e69b
     }
   },
   "skills": {
@@ -39,6 +44,7 @@
     "alwaysLearningTitle": "Toujours en apprentissage",
     "alwaysLearningText": "J'explore constamment de nouvelles technologies et frameworks pour rester à jour avec les dernières tendances du développement web. Actuellement, j'approfondis Next.js, TypeScript et les patterns avancés de React."
   },
+<<<<<<< HEAD
   "projects": {
     "title": "Mes Projets",
     "subtitle": "Une collection de projets sur lesquels j'ai travaillé, mettant en valeur mes compétences et mon expérience.",
@@ -100,6 +106,8 @@
       "defaultSubject": "Contact depuis le Site Web de Portfolio"
     }
   },
+=======
+>>>>>>> ad6ee24881f8f943b70dfe75c077e8195223e69b
   "footer": {
     "aboutText": "Développeur Frontend et WordPress passionné par la création d’expériences web exceptionnelles qui font la différence.",
     "linkHeading": "Liens rapides",
