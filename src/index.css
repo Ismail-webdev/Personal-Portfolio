@@ -76,7 +76,6 @@
     @apply max-w-7xl mx-auto;
   }
 }
-<<<<<<< HEAD
 
 /* ---------- Animations ---------- */
 @keyframes bounce-slow {
@@ -91,5 +90,3 @@
 .animate-bounce-slow {
   animation: bounce-slow 3s ease-in-out infinite;
 }
-=======
->>>>>>> ad6ee24881f8f943b70dfe75c077e8195223e69b

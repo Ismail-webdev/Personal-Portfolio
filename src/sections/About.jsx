@@ -67,11 +67,7 @@ const About = () => {
           animate={isInView ? "visible" : "hidden"}
           className="max-w-6xl mx-auto"
         >
-<<<<<<< HEAD
           <motion.div variants={itemVariants} className="text-center mb-16">
-=======
-          <motion.div values={itemVariants} className="text-center mb-16">
->>>>>>> ad6ee24881f8f943b70dfe75c077e8195223e69b
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {t("about.about_me")}
             </h2>
@@ -129,11 +125,7 @@ const About = () => {
                   {/* Content */}
                   <div className="relative z-10 h-full flex flex-col justify-center items-center text-center">
                     {/* Image */}
-<<<<<<< HEAD
                     <div className="w-32 h-32 bg-gradient-to-br from-accent-500 to-primary-500 rounded-full mb-6 flex items-center justify-center overflow-hidden">
-=======
-                    <div className="w-30 h-30 bg-gradient-to-br from-accent-500 to-primary-500 rounded-full mb-6 flex items-center justify-center overflow-hidden">
->>>>>>> ad6ee24881f8f943b70dfe75c077e8195223e69b
                       <img
                         src="/profilepic.jpg"
                         alt={t("about.profileCard.imageAlt")}
@@ -148,11 +140,7 @@ const About = () => {
                       {t("about.profileCard.role")}
                     </h3>
                     <p className="text-sm text-slate-400 mb-4">
-<<<<<<< HEAD
                       React • WordPress • TailwindCSS
-=======
-                      {t("about.profileCard.skills")}
->>>>>>> ad6ee24881f8f943b70dfe75c077e8195223e69b
                     </p>
 
                     {/* Dots */}

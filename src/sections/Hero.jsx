@@ -11,11 +11,7 @@ const Hero = () => {
     visible: {
       opacity: 1,
       transition: {
-<<<<<<< HEAD
         staggerChildren: 0.3,
-=======
-        staggerChilderen: 0.3,
->>>>>>> ad6ee24881f8f943b70dfe75c077e8195223e69b
         delayChildren: 0.2,
       },
     },
@@ -70,11 +66,7 @@ const Hero = () => {
 
             {/* Intro */}
             <motion.h1
-<<<<<<< HEAD
               variants={itemVariants}
-=======
-              values={itemVariants}
->>>>>>> ad6ee24881f8f943b70dfe75c077e8195223e69b
               className="text-5xl md:text-7xl font-bold text-white mb-6"
             >
               Ismail Ali
