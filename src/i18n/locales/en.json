@@ -83,7 +83,11 @@
       "description": "Feel free to reach out if you have any questions or would like to discuss a project. I'm always open to new opportunities and collaborations.",
       "emailLabel": "Email",
       "locationLabel": "Location",
-      "locationValue": "Available for Remote Work"
+      "locationValue": "Available for Remote Work",
+      "form": {
+        "sending": "Sending...",
+        "submit": "Send Message"
+      }
     },
     "form": {
       "name": "Name",

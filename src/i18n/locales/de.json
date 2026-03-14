@@ -40,6 +40,35 @@
     "alwaysLearningTitle": "Stets lernbereit",
     "alwaysLearningText": "Ich erkunde ständig neue Technologien und Frameworks, um auf dem neuesten Stand der Webentwicklung zu bleiben. Derzeit vertiefe ich meine Kenntnisse in Next.js, TypeScript und fortgeschrittenen React-Patterns."
   },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Haben Sie ein Projekt im Kopf? Lassen Sie uns zusammenarbeiten und Ihre Ideen zum Leben erwecken.",
+    "info": {
+      "title": "Kontaktinformationen",
+      "description": "Zögern Sie nicht, mich zu kontaktieren, wenn Sie Fragen haben oder ein Projekt besprechen möchten. Ich bin immer offen für neue Möglichkeiten und Kooperationen.",
+      "emailLabel": "E-Mail",
+      "locationLabel": "Standort",
+      "locationValue": "Verfügbar für Remote-Arbeit",
+      "form": {
+        "sending": "Wird gesendet...",
+        "submit": "Nachricht senden"
+      }
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre.email@beispiel.com",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Projektanfrage",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt...",
+      "submit": "Nachricht senden",
+      "success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.",
+      "error": "Bitte füllen Sie alle erforderlichen Felder aus.",
+      "defaultSubject": "Kontakt über Portfolio-Website"
+    }
+  },
   "footer": {
     "aboutText": "Frontend- & WordPress-Entwickler mit Leidenschaft für außergewöhnliche Web-Erlebnisse, die einen Unterschied machen.",
     "linkHeading": "Schnellzugriff",

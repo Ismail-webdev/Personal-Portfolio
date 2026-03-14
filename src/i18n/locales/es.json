@@ -75,6 +75,7 @@
       }
     }
   },
+
   "contact": {
     "title": "Ponte en Contacto",
     "subtitle": "¿Tienes un proyecto en mente? Trabajemos juntos para dar vida a tus ideas.",
@@ -83,7 +84,11 @@
       "description": "No dudes en contactarme si tienes alguna pregunta o te gustaría discutir un proyecto. Siempre estoy abierto a nuevas oportunidades y colaboraciones.",
       "emailLabel": "Correo Electrónico",
       "locationLabel": "Ubicación",
-      "locationValue": "Disponible para trabajo remoto"
+      "locationValue": "Disponible para trabajo remoto",
+      "form": {
+        "submit": "Enviar mensaje",
+        "sending": "Enviando..."
+      }
     },
     "form": {
       "name": "Nombre",

@@ -6,6 +6,9 @@ export default async function handler(req, res) {
 
   const { name, email, subject, message } = req.body;
 
+  const html = ``;
+  const text = ``;
+
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
