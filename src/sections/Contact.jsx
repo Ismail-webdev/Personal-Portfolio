@@ -13,8 +13,7 @@ const Contact = () => {
   const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const sendingText = t("contact.form.sending");
-  const submitText = t("contact.form.submit");
+
   // keeps your existing success / error message UI
   const [formStatus, setFormStatus] = useState({
     type: null,
@@ -258,7 +257,9 @@ const Contact = () => {
                   className="w-full btn-primary flex items-center justify-center gap-2 text-lg"
                 >
                   <Send size={20} />
-                  {isSubmitting ? sendingText : submitText}
+                  {isSubmitting
+                    ? t("contact.form.sending")
+                    : t("contact.form.submit")}
                 </motion.button>
               </form>
             </motion.div>
