@@ -11,17 +11,17 @@
     "greeting": "Bonjour, je suis",
     "name": "Ismail Ali",
     "role": "Développeur Frontend / WordPress",
-    "tagline": "Je conçois des sites rapides, réactifs et conviviaux qui donnent vie aux idées.",
-    "hireMe": "Engagez-moi",
+    "tagline": "Je conçois des sites web rapides, responsifs et conviviaux qui donnent vie à vos idées.",
+    "hireMe": "M'engager",
     "downloadCV": "Télécharger le CV"
   },
   "about": {
     "about_me": "À propos de moi",
-    "about_description": "Je suis un développeur Frontend et WordPress passionné, titulaire d'un master en technologie de l'information. Avec plus d'un an d'expérience professionnelle, je me spécialise dans la création de sites Web modernes et réactifs offrant des expériences utilisateur exceptionnelles.",
-    "about_journey": "Mon parcours dans le développement web a commencé avec une solide formation en informatique, et j'ai depuis perfectionné mes compétences en React.js, WordPress et technologies web modernes. Je suis passionné par la création de code propre, efficace et d'interfaces utilisateur esthétiques.",
-    "about_current": "Actuellement chez Appiesoft Web Solutions, je me concentre sur le développement de mes compétences et la recherche d'opportunités à l'international, notamment en Europe et aux Émirats arabes unis, où je peux contribuer à des projets innovants et évoluer en tant que développeur.",
+    "about_description": "Je suis un développeur Frontend et WordPress passionné, titulaire d'un Master en Technologies de l'Information. Avec plus d'un an d'expérience professionnelle, je suis spécialisé dans la création de sites web modernes et responsifs offrant des expériences utilisateur exceptionnelles.",
+    "about_journey": "Mon parcours dans le développement web a débuté avec de solides bases en informatique, et j'ai depuis perfectionné mes compétences en React.js, WordPress et les technologies web modernes. Je suis passionné par la création de code propre et efficace ainsi que d'interfaces utilisateur soignées.",
+    "about_current": "Actuellement en poste chez Appiesoft Web Solutions, je me concentre sur l'élargissement de mon expertise et la recherche d'opportunités à l'international, notamment en Europe et aux Émirats arabes unis, où je pourrai contribuer à des projets innovants et évoluer en tant que développeur.",
     "stats": {
-      "education": "Éducation",
+      "education": "Formation",
       "experience": "Expérience",
       "goal": "Objectif",
       "goalValue": "International",
@@ -33,76 +33,77 @@
     }
   },
   "skills": {
-    "title": "Compétences et Technologies",
-    "proficiency": "Compétence",
-    "subtitle": "Technologies et outils que j'utilise pour créer des expériences web performantes et attrayantes.",
+    "title": "Compétences & Technologies",
+    "subtitle": "Les technologies et outils que j'utilise pour créer des expériences web belles et performantes.",
     "alwaysLearningTitle": "Toujours en apprentissage",
-    "alwaysLearningText": "J'explore constamment de nouvelles technologies et frameworks pour rester à jour avec les dernières tendances du développement web. Actuellement, j'approfondis Next.js, TypeScript et les patterns avancés de React."
+    "alwaysLearningText": "J'explore constamment de nouvelles technologies et frameworks pour rester à la pointe des dernières tendances du développement web. J'approfondis actuellement mes connaissances de Next.js, TypeScript et des patterns React avancés afin d'améliorer mes capacités de développement.",
+    "proficiency": "Niveau de maîtrise"
   },
   "projects": {
     "title": "Mes Projets",
-    "subtitle": "Une collection de projets sur lesquels j'ai travaillé, mettant en valeur mes compétences et mon expérience.",
+    "subtitle": "Une sélection de projets sur lesquels j'ai travaillé, illustrant mes compétences et mon expérience.",
     "viewCode": "Code",
     "viewDemo": "Démo",
     "items": {
       "project1": {
-        "title": "Site Web de Portfolio Moderne",
-        "description": "Un site web de portfolio responsive construit avec React.js et TailwindCSS, avec des animations fluides et un design moderne."
+        "title": "Site Portfolio Moderne",
+        "description": "Un site portfolio responsif développé avec React.js et TailwindCSS, avec des animations fluides et un design moderne."
       },
       "project2": {
-        "title": "Site WordPress E-commerce",
-        "description": "Un site web e-commerce entièrement fonctionnel utilisant WordPress et WooCommerce avec des designs Elementor personnalisés."
+        "title": "Site E-commerce WordPress",
+        "description": "Un site e-commerce entièrement fonctionnel utilisant WordPress et WooCommerce avec des designs Elementor personnalisés."
       },
       "project3": {
         "title": "Application Web React",
-        "description": "Une application web dynamique construite avec React.js, avec des composants UI modernes et un design responsive."
+        "description": "Une application web dynamique développée avec React.js, comprenant des composants UI modernes et un design responsif."
       }
     }
   },
   "experience": {
     "title": "Expérience Professionnelle",
-    "subtitle": "Mon parcours professionnel et les rôles que j'ai occupés.",
-    "keyResponsibilities": "Responsabilités Clés",
+    "subtitle": "Mon parcours professionnel et les postes que j'ai occupés.",
+    "keyResponsibilities": "Responsabilités clés",
     "items": {
       "exp1": {
         "title": "Développeur Frontend",
-        "location": "Distant",
-        "period": "2023 - Présent",
-        "description": "Développement et maintenance d'applications web modernes utilisant React.js, WordPress et d'autres technologies frontend.",
+        "location": "Télétravail",
+        "period": "2023 – Présent",
+        "description": "Développement et maintenance d'applications web modernes avec React.js, WordPress et d'autres technologies frontend.",
         "responsibility1": "Développer des interfaces utilisateur responsives et interactives avec React.js",
-        "responsibility2": "Construire et personnaliser des sites WordPress avec Elementor et WooCommerce",
-        "responsibility3": "Collaborer avec les membres de l'équipe pour fournir des solutions web de haute qualité"
+        "responsibility2": "Créer et personnaliser des sites WordPress avec Elementor et WooCommerce",
+        "responsibility3": "Collaborer avec les membres de l'équipe pour livrer des solutions web de haute qualité"
       }
     }
   },
   "contact": {
-    "title": "Entrer en Contact",
+    "title": "Prendre Contact",
     "subtitle": "Vous avez un projet en tête ? Travaillons ensemble pour donner vie à vos idées.",
     "info": {
       "title": "Informations de Contact",
-      "description": "N'hésitez pas à me contacter si vous avez des questions ou souhaitez discuter d'un projet. Je suis toujours ouvert aux nouvelles opportunités et collaborations.",
+      "description": "N'hésitez pas à me contacter si vous avez des questions ou souhaitez discuter d'un projet. Je suis toujours ouvert à de nouvelles opportunités et collaborations.",
       "emailLabel": "E-mail",
-      "locationLabel": "Emplacement",
-      "locationValue": "Disponible pour le travail à distance"
+      "locationLabel": "Localisation",
+      "locationValue": "Disponible pour le télétravail"
     },
     "form": {
       "name": "Nom",
       "namePlaceholder": "Votre nom",
       "email": "E-mail",
       "emailPlaceholder": "votre.email@exemple.com",
-      "subject": "Sujet",
+      "subject": "Objet",
       "subjectPlaceholder": "Demande de projet",
       "message": "Message",
       "messagePlaceholder": "Parlez-moi de votre projet...",
-      "submit": "Envoyer le Message",
+      "submit": "Envoyer le message",
       "success": "Merci ! Votre message a été envoyé avec succès.",
-      "error": "Veuillez remplir tous les champs requis.",
-      "defaultSubject": "Contact depuis le Site Web de Portfolio"
+      "error": "Veuillez remplir tous les champs obligatoires.",
+      "defaultSubject": "Contact depuis le site portfolio",
+      "sending": "Envoi en cours..."
     }
   },
   "footer": {
-    "aboutText": "Développeur Frontend et WordPress passionné par la création d’expériences web exceptionnelles qui font la différence.",
-    "linkHeading": "Liens rapides",
+    "aboutText": "Développeur Frontend & WordPress passionné par la création d'expériences web exceptionnelles qui font la différence.",
+    "linkHeading": "Liens Rapides",
     "links": {
       "about": "À propos",
       "skills": "Compétences",
@@ -110,25 +111,25 @@
       "experience": "Expérience",
       "contact": "Contact"
     },
-    "contactHeading": "Entrer en contact",
+    "contactHeading": "Prendre Contact",
     "contact": {
-      "emailLabel": "E-mail:",
-      "location": "Emplacement :",
-      "locationtext": "Disponible pour le travail à distance",
+      "emailLabel": "E-mail :",
+      "location": "Localisation :",
+      "locationtext": "Disponible pour le télétravail",
       "status": "Statut :",
       "statustext": "Ouvert aux opportunités"
     },
-    "techHeading": "Technologies",
+    "techHeading": "Stack Technique",
     "techCategories": {
-      "frontend": "Interface Frontend",
-      "design": "Conception",
+      "frontend": "Frontend",
+      "design": "Design",
       "tools": "Outils"
     },
     "copyright": {
       "name": "Ismail Ali",
       "rights": "Tous droits réservés.",
-      "made": "Fait avec",
-      "tech": "en utilisant React et TailwindCSS"
+      "made": "Réalisé avec",
+      "tech": "avec React & TailwindCSS"
     }
   }
 }

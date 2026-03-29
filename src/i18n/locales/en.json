@@ -83,11 +83,7 @@
       "description": "Feel free to reach out if you have any questions or would like to discuss a project. I'm always open to new opportunities and collaborations.",
       "emailLabel": "Email",
       "locationLabel": "Location",
-      "locationValue": "Available for Remote Work",
-      "form": {
-        "sending": "Sending...",
-        "submit": "Send Message"
-      }
+      "locationValue": "Available for Remote Work"
     },
     "form": {
       "name": "Name",
@@ -101,7 +97,8 @@
       "submit": "Send Message",
       "success": "Thank you! Your message has been sent successfully.",
       "error": "Please fill in all required fields.",
-      "defaultSubject": "Contact from Portfolio Website"
+      "defaultSubject": "Contact from Portfolio Website",
+      "sending": "Sending..."
     }
   },
   "footer": {
