@@ -96,6 +96,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleHireMe}
+                aria-label="Send me an email"
                 className="btn-primary text-lg px-8 py-4"
               >
                 <Mail className="inline-block mr-2" size={20} />
@@ -122,6 +123,7 @@ const Hero = () => {
                 href="https://github.com/Ismail-webdev"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Ismail's GitHub profile"
                 className="p-3 bg-primary-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-primary-300 hover:text-accent-400"
               >
                 <Github size={24} />
@@ -129,6 +131,7 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.2, rotate: -5 }}
                 whileTap={{ scale: 0.9 }}
+                aria-label="Visit Ismail's Linkedin profile"
                 href="https://linkedin.com/in/ismailali082"
                 target="_blank"
                 rel="noopener noreferrer"
