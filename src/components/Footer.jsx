@@ -16,13 +16,21 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/Ismail-webdev", label: "GitHub" },
+    {
+      icon: Github,
+      href: "https://github.com/Ismail-webdev",
+      label: "Visit Ismail's GitHub profile",
+    },
     {
       icon: Linkedin,
       href: "https://linkedin.com/in/ismailali082",
-      label: "LinkedIn",
+      label: "Visit Ismail's LinkedIn profile",
     },
-    { icon: Mail, href: "mailto:ismailali.webdev@gmail.com", label: "Email" },
+    {
+      icon: Mail,
+      href: "mailto:ismailali.webdev@gmail.com",
+      label: "Send an email to Ismail",
+    },
   ];
 
   const quickLinks = [
@@ -76,12 +84,13 @@ const Footer = () => {
               <div className="flex space-x-4">
                 {socialLinks.map((social) => (
                   <motion.a
-                    key={social.label}
+                    key={social.href}
                     whileHover={{ scale: 1.2, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={social.label}
                     className="p-2 bg-primary-800 rounded-lg hover:bg-accent-600 transition-colors duration-300"
                   >
                     <social.icon
